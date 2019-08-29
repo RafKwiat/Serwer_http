@@ -3,69 +3,62 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="vendor/flickity.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet"> 
+    <title>Song of the day</title>
 </head>
+
 <body>
-        <div class="button-group">
-            <button class="button button--next-wrapped" data-selector=".cell1">Reset</button>
+    <div class="container">
+        <div class="frame">
+            <h1>Rammstein - "Sonne"</h1>
+            <p class="first">Alle warten auf das Licht 
+                Fürchtet euch, fürchtet euch nicht 
+                Die Sonne scheint mir aus den Augen 
+                Sie wird heut Nacht nicht untergehen 
+                Und die Welt zählt laut bis zehn 
+                Eins, hier kommt die Sonne 
+                Zwei, hier kommt die Sonne 
+                Drei, sie ist der hellste Stern von allen 
+                Vier, hier kommt die Sonne </p>
+            <p class="second">
+                Die Sonne scheint mir aus den Händen 
+                Kann verbrennen, kann euch blenden 
+                Wenn sie aus den Fäusten bricht 
+                Legt sich heiss auf das Gesicht 
+                Sie wird heut Nacht nicht untergehen 
+                Und die Welt zählt laut bis zehn 
+
+                Eins, hier kommt die Sonne 
+                Zwei, hier kommt die Sonne 
+                Drei, sie ist der hellste Stern von allen 
+                Vier, hier kommt die Sonne 
+                Fünf, hier kommt die Sonne 
+                Sechs, hier kommt die Sonne 
+                Sieben, sie ist der hellste Stern von allen 
+                Acht, neun, hier kommt die Sonne 
+            </p>
+            <p class="third">
+                Die Sonne scheint mir aus den Händen 
+                Kann verbrennen, kann dich blenden 
+                
+                Legt sich heiss auf dein Gesicht 
+
+                Legt sich schmerzend auf die Brust 
+                Das Gleichgewicht wird zum Verlust 
+                Lässt dich hart zu Boden gehen 
+                Und die Welt zählt laut bis zehn 
+
+                Eins, hier kommt die Sonne 
+                Zwei, hier kommt die Sonne 
+                Drei, sie ist der hellste Stern von allen 
+                Vier, und wird nie vom Himmel fallen 
+                Fünf, hier kommt die Sonne 
+                Sechs, hier kommt die Sonne 
+                Sieben, sie ist der hellste Stern von allen 
+                Acht, neun, hier kommt die Sonne
+            </p>
         </div>
-    <div class="results" id="main-carrousel"></div>
-    <div class="progress-bar"></div>
-    <div class="map-box">
-        <h3>Map of the world</h3>
-        <p id="infos"></p>
-        <div id="map"></div>
     </div>
-    
-    <script id="template-cell" type="x-tmpl-mustache">    
-        <div class="carrousel-cell" style="background-image:url( {{image}} )">
-            <div class="container">
-                <h2>{{title}}</h2>
-                {{{description}}}
-            </div>
-        </div>
-    </script>    
-    
-    <script>
-        var objects = [
-            {
-                image: "https://images.pexels.com/photos/2479642/pexels-photo-2479642.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-                title: "Lorem ipsum dolor sit amet",
-                description: "<p>Lorem ipsum.Dolor sit amet.</p>",
-                coords: {lat: 51.396761, lng: -125.267406}
-            },
-            {
-                image: "https://images.pexels.com/photos/2289038/pexels-photo-2289038.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-                title: "Lorem ipsum dolor sit amet",
-                description: "<p>Lorem ipsum.Dolor sit amet.</p>",
-                coords: {lat: 47.138058, lng: 12.354508}
-            },
-            {
-                image: "https://images.pexels.com/photos/2187661/pexels-photo-2187661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-                title: "Lorem ipsum dolor sit amet",
-                description: "<p>Lorem ipsum.Dolor sit amet.</p>",
-                coords: {lat: 36.158894, lng: 137.251600}
-            },
-            {
-                image: "https://images.pexels.com/photos/2275221/pexels-photo-2275221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-                title: "Lorem ipsum dolor sit amet",
-                description: "<p>Lorem ipsum.Dolor sit amet.</p>",
-                coords: {lat: 61.846574, lng: 6.934056}
-            },
-            {
-                image: "https://images.pexels.com/photos/2291039/pexels-photo-2291039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-                title: "Lorem ipsum dolor sit amet",
-                description: "<p>Lorem ipsum.Dolor sit amet.</p>",
-                coords: {lat: 49.305484, lng: 19.959493}
-            }
-        ];    
-    </script>
-    <script src=vendor/flickity.pkgd.min.js></script>
-    <script src=vendor/mustache.js></script>
-    <script src=js/script.js></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuMIVCbGmiKgycblKjOdHEPehu20E546w&callback=initMap"></script>
 </body>
 </html>
